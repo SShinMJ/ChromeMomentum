@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SShinMJ Momentum</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+
+  <body>
+    <div id="login_div">
+      <div id="login_content">
+        <h1>Welcome!</h1><br>
+        <h2>What your name? </h2><br>
+        <form id="login_form">
+          <input id="login_input" type="text" placeholder="사용자 이름 입력"><br>
+          <input id="login_button" type="submit" value="Login">
+        </form>
+      </div>
+    </div>
+    <div id="content_div">
+      <div id="main_content_div">
+        <div id="todo" class="box_div main_box_div">
+          <h1>Your To do List</h1>
+          <div id="todo_input_div">
+            <form id="todo_form">
+              <input id="todo_input" type="text" class="hidden todo_text" placeholder="Write and ENTER" required>
+              <button id="hidden_todo_input" class="hidden" type="button">x</button>
+            </form>
+            <button id="add_todo" class="todo_text">일정 확인 및 추가하기</button>
+          </div>
+          <ul id="todo_list" class="todo_text"></ul>
+        </div>
+        <div id="quote_div" class="box_div main_box_div">
+            <h2 id="quote"></h2>
+            <h2 id="author"></h2>
+        </div>
+      </div>
+      <div id="sub_content_div">
+        <div id="user_div" class="box_div sub_box_div">
+          <h2 id="user_name">Have a good day!</h2>
+        </div>
+        <div id="clock_div" class="box_div sub_box_div">
+          <h2 id="date"></h2><br>
+          <h3 id="clock"></h3>
+        </div>
+        <div id="weather_div" class="box_div sub_box_div">
+          <span id="city"></span>
+          <div id="weather_content">
+            <div id="weather_data">
+              <img id="weatherIcon">
+              <span id="weather"></span>
+            </div>
+            <div id="temp_data">
+              <span id="temperature"></span>
+            </div>
+          </div>
+        </div>
+        <div id="setting_content" class="box_div sub_box_div">
+          <label>
+            <div id="logout_div">
+              <button id="logout_button" onclick="logout()"></button>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="javascript/login.js"></script>
+  <script src="javascript/clock.js"></script>
+  <script src="javascript/quotes.js"></script>
+  <script src="javascript/background.js"></script>
+  <script src="javascript/todo.js"></script>
+  <script src="javascript/weather.js"></script>
+</html>
