@@ -4,7 +4,7 @@ const dates = document.getElementById("date");
 function setTime() {
     const date = new Date();
     const Year = String(date.getFullYear());
-    const Month = String(date.getMonth());
+    const Month = String(date.getMonth()+1);
     const Day = String(date.getDate());
     const hours = String(date.getHours()).padStart(2, "0");
     const minutes = String(date.getMinutes()).padStart(2, "0");
